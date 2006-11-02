@@ -23,7 +23,7 @@ set :repository, "https://secure.svnrepository.com/s_digger/rudyonrails/#{applic
 # be used to single out a specific subset of boxes in a particular role, like
 # :primary => true.
 
-set :server, 'otterlodge.com'
+set :server, 'theotterlodge.com'
 role :web, server
 role :app, server
 role :db,  server, :primary => true
