@@ -53,15 +53,15 @@ login: &login
   password: <%= db_password %>
 
 development:
-  database: <%= "#{user}_development" %>
+  database: <%= "#{user}_otterdev" %>
   <<: *login
 
 test:
-  database: <%= "#{user}_test" %>
+  database: <%= "#{user}_ottertest" %>
   <<: *login
 
 production:
-  database: <%= "#{user}_production" %>
+  database: <%= "#{user}_otterprod" %>
   <<: *login
 EOF
 
