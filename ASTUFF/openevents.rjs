@@ -1,0 +1,5 @@
+page.visual_effect :BlindDown, 'events'
+
+page.delay(3.0) do
+ page.closeevents
+end

@@ -1,0 +1,2 @@
+module CrudeventsHelper
+end

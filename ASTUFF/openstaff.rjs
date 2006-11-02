@@ -1,0 +1,5 @@
+page.visual_effect :grow, 'staff'
+
+page.delay(8.0) do
+ page.closestaff
+end

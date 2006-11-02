@@ -1,0 +1,9 @@
+<script src="http://gmodules.com/ig/ifr?url=http://ralph.feedback.googlepages.com/googlecalendarviewer.xml&up_feed=http%3A%2F%2Fwww.google.com%2Fcalendar%2Ffeeds%2Fralph.feedback%40gmail.com%2Fpublic%2Fbasic&up_highlight=%23006600&up_borderStyle=solid&up_borderSize=3&synd=open&w=320&h=200&title=Google+Calendar+Viewer&border=%23ffffff%7C0px%2C1px+solid+%2399BB66%7C0px%2C2px+solid+%23AACC66%7C0px%2C2px+solid+%23BBDD66&output=js"></script>
+<h1>New schedule</h1>
+
+<%= start_form_tag :action => 'create' %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag "Create" %>
+<%= end_form_tag %>
+
+<%= link_to 'Back', :action => 'list' %>

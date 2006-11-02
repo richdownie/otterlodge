@@ -1,0 +1,60 @@
+/* Styles for main page */
+<style type="text/css">
+
+#container {
+border: 0px solid gray;
+margin: 10px;
+margin-left: auto;
+margin-right: auto;
+padding: 10px;
+text-align:left;
+background: #FFF;
+width: 300px;
+}
+
+#banner {
+  background: green;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid;
+  font: small-caps 40px/40px "Garamond", serif;
+  color: yellow;
+  text-align: center;
+  font-weight: bold;
+}
+
+#content {
+padding: 10px;
+margin-right: 200px;
+margin-left: 200px;
+margin-bottom: 10px;
+border: 0px solid gray;
+}
+
+#sidebar-a {
+float: left;
+width: 175px;
+text-align: center;
+}
+
+#sidebar-b {
+float: right;
+width: 175px;
+margin: 0px 0px 20px 5px;
+padding: 10px;
+border-left: 0px solid gray;
+}
+
+h2 {
+  font:  150% garamond, sans-serif;
+  color: #226;
+}
+
+#special-list .list-line-even {
+background: #FFFFCC ;
+}
+#special-list .list-line-odd {
+background: #CCFFCC ;
+}
+
+</style>

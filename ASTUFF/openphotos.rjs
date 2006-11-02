@@ -1,0 +1,5 @@
+page.visual_effect :appear, 'photos'
+
+page.delay(3.0) do
+ page.closephotos
+end

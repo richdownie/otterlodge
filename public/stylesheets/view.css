@@ -1,0 +1,49 @@
+/* Styles for main page */
+
+#banner {
+  background: green;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid;
+  font: small-caps 40px/40px "Helvetica", serif;
+  color: #FFFF33;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+#main {
+  margin-left: 2em;
+  padding-top: 4ex;
+  padding-left: 1em;
+  padding-right: 1em;
+  background: white;
+  color: black;
+}
+
+#side {
+  float: left;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 40em;
+  width: 16em;
+  color: black;
+  background: white;
+}
+
+h2 {
+  font:  150% Helvetica, sans-serif;
+  color: #226;
+}
+
+#special-list .list-line-even {
+background: #FFFFCC;
+  font-weight: bold;
+  font-size: 14px;
+}
+#special-list .list-line-odd {
+background: #CCFFCC ;
+  font-weight: bold;
+  font-size: 14px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" > 
+
+<html>
+<head>
+  <title>OTTER LODGE</title>
+  <%= stylesheet_link_tag "view", :media => "all" %>
+  <%= javascript_include_tag :defaults %>
+</head>
+<body id="view">
+    <div id="banner">
+            <%= @page_title || "THE OTTER LODGE"%>
+    </div>
+  
+     <div id="side" align="center">
+     <h5><%= Time.now.strftime("%m/%d/%Y") %></h5>
+       <img src="/images/logo_otterlodge.jpg" width="157" height="170" alt="Otter Lodge" />
+           <div><%= button_to "EMPLOYEES ONLY", :controller => 'account', :action => 'login' %></div>
+            <p>Have a great meal watch the game or just have some great conversation!  This is your place!</p> 
+           <div id="address" align="center">
+             <h5>1776 Monroe Ave Rochester, NY 14618<br/>
+             585.442.8790</h5>
+          </div>
+           <div id="loading" style="display: none">
+             Loading...
+           </div>          
+     
+      </div>
+      
+      <div id="main">
+          <%= @content_for_layout %>
+          
+     </div>
+</body>
+</html>
