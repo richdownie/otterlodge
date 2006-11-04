@@ -1,26 +1,27 @@
      <div id="links" align="center">
+     <big><img alt="spinner" id="spinner" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
          <%= link_to_remote "MENU",
                     :url => menus_url(:action => 'openmenu'),
-                    :loading => "Element.show('loading')",
-                    :loaded => "Element.hide('loading')",
+                    :loading => "Element.show('spinner')",
+                    :loaded => "Element.hide('spinner'), Element.show('picture')",
                     :completed => "Element.show('menu')" %> |
 
          <%= link_to_remote "EVENTS",
                     :url => menus_url(:action => 'openevent'),
-                    :loading => "Element.show('loading')",
-                    :loaded => "Element.hide('loading')",
+                    :loading => "Element.show('spinner')",
+                    :loaded => "Element.hide('spinner'), Element.show('picture')",
                     :completed => "Element.show('event')" %> |                   
 
          <%= link_to_remote "PHOTOS",
                     :url => map_url(:action => 'openphotos'),
-                    :loading => "Element.show('loading')",
-                    :loaded => "Element.hide('loading')",
+                    :loading => "Element.show('spinner')",
+                    :loaded => "Element.hide('spinner'), Element.show('picture')",
                     :completed => "Element.show('photos')" %> |
                   
          <%= link_to_remote "SPORTS PAGE",
                     :url => menus_url(:action => 'opensports'),
-                    :loading => "Element.show('loading')",
-                    :loaded => "Element.hide('loading')",
+                    :loading => "Element.show('spinner')",
+                    :loaded => "Element.hide('spinner'), Element.show('picture')",
                     :completed => "Element.show('sports')" %>
                     
       </div>
@@ -54,13 +55,15 @@
    <div id="sports" style="display: none"> 
    <div align="center">
      <%= link_to_remote "CLOSE",
-                    :url => menus_url(:action => 'closesports'), 
+                    :url => menus_url(:action => 'closesports'),
+                    :loading => "Element.show('spinner')",
+                    :loaded => "Element.hide('spinner')", 
                     :completed => "Element.hide('sports')" %>        
      <%= render :partial => 'sports' %> 
    </div>            
    </div>
-   
-<div id="picture" align="center">
+    
+<div id="picture" align="center" style="display: none">
   <img src="/images/IMG_4808(2).JPG" width="360" height="210"  border="4" alt="Otter Lodge" />
 </div>
 
