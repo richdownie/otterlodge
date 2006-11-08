@@ -10,6 +10,8 @@ page.delay(5.0) do
  page.closeevent
 end
 
+
+
 page.delay(5.6) do
-  page.visual_effect :Highlight, 'side', :duration => 4
+  page.visual_effect :Highlight, 'logo', :duration => 1
 end
