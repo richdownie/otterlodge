@@ -1,14 +1,17 @@
 class CreateSpecials < ActiveRecord::Migration
   def self.up
     create_table :specials do |t|
-       t.column :sort, :integer
-       t.column :name, :string
-       t.column :price, :decimal, :precision => 8, :default => 0, :scale => 2
-       t.column :description, :string
+       t.column :day, :string
+       t.column :lunch, :string
+       t.column :dinner, :string
     end
-    Special.create :name => "Hamburger", :price => 4
-    Special.create :name => "Turkey Club", :price => 5
-    Special.create :name => "Chicken Soup", :price => 3
+    Special.create :day => "Monday", :lunch => "Hamburger...$5.95", :dinner => "Cheeseburger...$6.35"
+    Special.create :day => "Tuesday", :lunch => "Hamburger...$5.95", :dinner => "Cheeseburger...$6.35"
+    Special.create :day => "Wednesday", :lunch => "Hamburger...$5.95", :dinner => "Cheeseburger...$6.35"
+    Special.create :day => "Thursday", :lunch => "Hamburger...$5.95", :dinner => "Cheeseburger...$6.35"
+    Special.create :day => "Friday", :lunch => "Hamburger...$5.95", :dinner => "Cheeseburger...$6.35"
+    Special.create :day => "Saturday", :lunch => "Hamburger...$5.95", :dinner => "Cheeseburger...$6.35"
+    Special.create :day => "Sunday", :lunch => "Hamburger...$5.95", :dinner => "Cheeseburger...$6.35"
   end
 
   def self.down

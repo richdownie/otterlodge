@@ -68,12 +68,22 @@
     <table cellpadding="5" cellspacing="0" border="6">
       <br/>
        <div  align="center"><small>SPECIALS THIS WEEK<small></div>
+        <tr>
+            <th>Day</th>
+            <th>Lunch</th>
+            <th>Dinner</th>
+        </tr> 
        <% for special in @specials -%>
          <tr  align="center" valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
             <td>
-               <%= h(special.name) %>..............................<%= number_to_currency(special.price) %><br/>
+               <%= h(special.day) %> <br/>
             </td>
-
+            <td>    
+               <%= h(special.lunch) %>
+            </td>
+            <td>
+                <%= h(special.dinner) %>
+            </td>
          </tr>
        <% end %>
      </table>

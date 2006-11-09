@@ -25,10 +25,9 @@ ActiveRecord::Schema.define(:version => 5) do
   end
 
   create_table "specials", :force => true do |t|
-    t.column "sort", :integer
-    t.column "name", :string
-    t.column "price", :float, :limit => 10, :default => 0.0
-    t.column "description", :string
+    t.column "day", :string
+    t.column "lunch", :string
+    t.column "dinner", :string
   end
 
   create_table "users", :force => true do |t|
