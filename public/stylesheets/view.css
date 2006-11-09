@@ -1,5 +1,10 @@
 /* Styles for main page */
 
+#main a:link {
+	color: #008000;
+	text-decoration: none;
+}
+
 #banner {
   background: green;
   padding-top: 0.5em;
@@ -27,6 +32,7 @@
   padding-right: 2em;
   background: white;
   color: black;
+  margin-bottom: 50px;
 }
 
 #side {
