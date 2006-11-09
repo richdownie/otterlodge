@@ -53,14 +53,14 @@
    </div>
 
    <div id="sports" style="display: none"> 
-   <div align="center">
-     <%= link_to_remote "CLOSE",
+    <div align="center">
+         <%= link_to_remote "CLOSE",
                     :url => menus_url(:action => 'closesports'),
                     :loading => "Element.show('spinner')",
                     :loaded => "Element.hide('spinner')", 
                     :completed => "Element.hide('sports')" %>        
-     <%= render :partial => 'sports' %> 
-   </div>            
+        <%= render :partial => 'sports' %> 
+    </div>            
    </div>
     
 
