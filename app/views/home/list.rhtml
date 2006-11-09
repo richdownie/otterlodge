@@ -1,7 +1,7 @@
+<big align="center"><img alt="spinner" id="spinner" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
 <br/>
      <div id="links" align="center">
-     <big><img alt="spinner" id="spinner" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
-         <%= link_to_remote "MENU",
+        <%= link_to_remote "MENU",
                     :url => menus_url(:action => 'openmenu'),
                     :loading => "Element.show('spinner')",
                     :loaded => "Element.hide('spinner'), Element.show('picture')",
