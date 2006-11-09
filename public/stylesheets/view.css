@@ -5,7 +5,7 @@
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   border: 4px solid;
-  font: small-caps 15px/15px "Helvetica", serif;
+  font: small-caps 18px/18px "Helvetica", serif;
   color: #FFFF33;
   text-align: center;
   font-weight: bold;
@@ -15,16 +15,16 @@
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   border: 4px solid;
-  font: small-caps 20px/20px "Helvetica", serif;
+  font: small-caps 18px/18px "Helvetica", serif;
   color: #FFFF33;
   text-align: center;
   font-weight: bold;
 }
 
 #main {
-  margin-left: 2em;
-  padding-left: 1em;
-  padding-right: 1em;
+  margin-left: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
   background: white;
   color: black;
 }
@@ -35,15 +35,27 @@
   padding-left: 1em;
   padding-right: 1em;
   padding-bottom: 10em;
-  border: 4px solid;
-  width: 16em;
+  width: 15em;
   color: yellow;
   background: green;
 }
 
 h2 {
-  font:  150% Helvetica, sans-serif;
+  font:  150% Garamond, sans-serif;
   color: #226;
+}
+
+#specials {
+  font:  95% Garamond, sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+th {
+  font:  100% Garamond, sans-serif;
+  color: yellow;
+  background: green;
+  font-weight: bold;
 }
 
 #special-list .list-line-even {
