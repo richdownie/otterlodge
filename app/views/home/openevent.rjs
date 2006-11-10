@@ -2,10 +2,6 @@ page.visual_effect :SlideDown, 'event'
 
 
 
-page.delay(4.4) do
-  page.visual_effect :Pulsate, 'event'
-end
-
 page.delay(5.0) do
  page.closeevent
 end

@@ -1,8 +1,5 @@
 page.visual_effect :SlideDown, 'menu'
 
-page.delay(4.4) do
-  page.visual_effect :Pulsate, 'menu'
-end
 
 page.delay(5.0) do
  page.closemenu

@@ -66,11 +66,9 @@ th {
 
 #special-list .list-line-even {
 background: #FFFFCC;
-  font-weight: bold;
   font-size: 14px;
 }
 #special-list .list-line-odd {
 background: #CCFFCC ;
-  font-weight: bold;
   font-size: 14px;
 }

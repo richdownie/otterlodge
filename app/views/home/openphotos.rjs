@@ -1,8 +1,5 @@
 page.visual_effect :SlideDown, 'photos'
 
-page.delay(4.4) do
-  page.visual_effect :Pulsate, 'photos'
-end
 
 page.delay(5.0) do
  page.closephotos
