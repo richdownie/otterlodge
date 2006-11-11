@@ -90,6 +90,7 @@ background: #CCFFCC ;
   font:  95% Garamond, sans-serif;
   color: yellow;
   font-weight: bold;
+	text-decoration: none;
 }
 #side a:visited { 
 	color: yellow;
