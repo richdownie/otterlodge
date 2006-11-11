@@ -25,7 +25,7 @@
        <%= link_to_remote "CONTACT US",
                     :url => menus_url(:action => 'opencontact'),
                     :loading => "Element.show('spinner2')",
-                    :loaded => "Element.hide('spinner2'), Element.show('picture')",
+                    :loaded => "Element.hide('spinner2'), Element.hide('contact-link')",
                     :completed => "Element.show('contact')" %>
   <big><img alt="spinner" id="spinner2" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
    
