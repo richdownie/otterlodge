@@ -1,1 +1,2 @@
 page.visual_effect :SlideDown, 'contact'
+page.visual_effect :SlideUp, 'contact-link'
