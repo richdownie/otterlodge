@@ -1,10 +1,23 @@
 /* Styles for main page */
 
 #main a:link {
-	color: #008000;
+	color: green;
 	text-decoration: none;
+    font-weight: bold;
+    font:  111% Garamond, sans-serif;
 }
 
+#links {
+
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: green;
+  font-weight: bold;
+  font:  111% Garamond, sans-serif;
+  
+}
+
+  
 #banner {
   background: green;
   padding-top: 0.5em;
