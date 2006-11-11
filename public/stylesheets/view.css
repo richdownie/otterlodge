@@ -91,7 +91,10 @@ background: #CCFFCC ;
   color: yellow;
   font-weight: bold;
 }
-
+#side a:visited { 
+	color: yellow;
+	}
+	
 #contact {
   font:  95% Garamond, sans-serif;
   color: yellow;
