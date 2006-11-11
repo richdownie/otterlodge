@@ -85,3 +85,15 @@ background: #FFFFCC;
 background: #CCFFCC ;
   font-size: 14px;
 }
+
+#side a:link {
+  font:  95% Garamond, sans-serif;
+  color: yellow;
+  font-weight: bold;
+}
+
+#contact {
+  font:  95% Garamond, sans-serif;
+  color: yellow;
+  font-weight: bold;
+}

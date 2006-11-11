@@ -21,6 +21,20 @@
   
 
 <div id="side">
+  <div id="contact-link">
+       <%= link_to_remote "CONTACT US",
+                    :url => menus_url(:action => 'opencontact'),
+                    :loading => "Element.show('spinner2')",
+                    :loaded => "Element.hide('spinner2'), Element.show('picture')",
+                    :completed => "Element.show('contact')" %>
+  <big><img alt="spinner" id="spinner2" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
+   
+  </div>
+     
+   <div id="contact" style="display: none"> 
+        <%= render :partial => 'contact' %>                  
+   </div>
+   <br/>
    <img src="/images/otter1.jpg" width="250" height="175"  border="4" alt="Otter Lodge" />
        <div id="blurb" align="left"> 
         <h4>There's a reason the slogan for this restaurant/pub is "Good Food, Good People, Good Times" since it offers all this and more. Let's start with the food. We have award winning wings, a great Southwestern Chicken sandwich
@@ -31,7 +45,7 @@ screens!! Add wi fi, private party rooms and other extras and now is the perfect
    <img src="/images/otter2.jpg" width="250" height="175"  border="4" alt="Otter Lodge" />
     <br/>
    <div id="emp" align="center">
-        <%= button_to "EMPLOYEES ONLY", :controller => 'account', :action => 'login' %>
+        <%= button_to "Login", :controller => 'account', :action => 'login' %>
    </div> 
            
     <div id="address" align="center">
