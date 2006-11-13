@@ -6,7 +6,11 @@
     font-weight: bold;
     font:  111% Garamond, sans-serif;
 }
-
+#main a:visited { 
+	color: green;
+	text-decoration: none;
+	}
+	
 #links {
 
   padding-top: 1em;
