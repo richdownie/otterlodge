@@ -26,15 +26,8 @@
      <%= render :partial => 'event' %>             
    </div>
 
-   <div id="sports" style="display: none"> 
-    <div align="center">
-         <%= link_to_remote "CLOSE",
-                    :url => menus_url(:action => 'closesports'),
-                    :loading => "Element.show('spinner')",
-                    :loaded => "Element.hide('spinner')", 
-                    :completed => "Element.hide('sports')" %>        
+   <div id="sports" style="display: none">      
         <%= render :partial => 'sports' %> 
-    </div>            
    </div>
     
 
