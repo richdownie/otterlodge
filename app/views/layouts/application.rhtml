@@ -21,6 +21,37 @@
   
 
 <div id="side">
+     <div id="links" align="left">
+       <%= link_to_remote "MENU",
+                    :url => menus_url(:action => 'openmenu'),
+                    :loading => "Element.show('spinner3')",
+                    :loaded => "Element.hide('spinner3'), Element.show('picture')",
+                    :completed => "Element.show('menu')" %> 
+                    <big><img alt="spinner" id="spinner3" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
+        <br/>
+
+       <%= link_to_remote "EVENTS",
+                    :url => menus_url(:action => 'openevent'),
+                    :loading => "Element.show('spinner4')",
+                    :loaded => "Element.hide('spinner4'), Element.show('picture')",
+                    :completed => "Element.show('event')" %>  <big><img alt="spinner" id="spinner4" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
+        <br/>                   
+
+         <%= link_to_remote "PHOTOS",
+                    :url => map_url(:action => 'openphotos'),
+                    :loading => "Element.show('spinner5')",
+                    :loaded => "Element.hide('spinner5'), Element.show('picture')",
+                    :completed => "Element.show('photos')" %>  <big><img alt="spinner" id="spinner5" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
+         <br/>
+                  
+         <%= link_to_remote "SPORTS PAGE",
+                    :url => menus_url(:action => 'opensports'),
+                    :loading => "Element.show('spinner6')",
+                    :loaded => "Element.hide('spinner6'), Element.show('picture')",
+                    :completed => "Element.show('sports')" %>  <big><img alt="spinner" id="spinner6" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
+        
+
+      </div>
   <div id="contact-link">
        <%= link_to_remote "CONTACT US",
                     :url => menus_url(:action => 'opencontact'),
