@@ -1,1 +1,1 @@
-page.visual_effect :appear, 'sports'
+page.visual_effect :SlideDown, 'sports'
