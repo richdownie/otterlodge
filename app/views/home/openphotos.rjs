@@ -1,13 +1,3 @@
 page.visual_effect :SlideDown, 'photos'
 
 
-page.delay(5.0) do
- page.closephotos
-end
-
-page.delay(5.6) do
-  page.visual_effect :Highlight, 'logo', 
-                     :startcolor => "'#003300'",
-                     :endcolor => "'#FFFFCC'",
-                     :duration => 1.5
-end
