@@ -22,11 +22,18 @@
 
 <div id="side">
      <div id="links" align="left">
+        <%= link_to_remote "HOME",
+                    :url => menus_url(:action => 'list'),
+                    :loading => "Element.show('spinner5')",
+                    :loaded => "Element.hide('spinner5'), Element.hide('event'), Element.hide('photos'), Element.hide('sports'), Element.hide('menu')",
+                    :completed => "Element.show('menu')" %> 
+                    <big><img alt="spinner" id="spinner5" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
+        <br/>
        <%= link_to_remote "MENU",
                     :url => menus_url(:action => 'openmenu'),
                     :loading => "Element.show('spinner3')",
                     :loaded => "Element.hide('spinner3'), Element.hide('event'), Element.hide('photos'), Element.hide('sports')",
-                    :completed => "Element.show('menu')" %> 
+                    :completed => "Element.show('special-list'), Element.show('map')" %> 
                     <big><img alt="spinner" id="spinner3" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
         <br/>
 
