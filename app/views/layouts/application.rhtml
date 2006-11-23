@@ -11,15 +11,12 @@
     <div id="banner2">   
        <small>"Good food, good people, good times"</small>
     </div>
-    
     <div id="logo" align="center">
       <img src="/images/logo_otterlodge.jpg" width="120" height="125" alt="Otter Lodge" />
     </div>
     <div id="banner">   
        <small>1776 Monore Ave Rochester, NY 14618</small>
     </div>
-  
-
 <div id="side">
      <div id="links" align="left">
         <%= link_to_remote "HOME",
@@ -29,6 +26,7 @@
                     :completed => "Element.show('menu')" %> 
                     <big><img alt="spinner" id="spinner5" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
         <br/>
+       
        <%= link_to_remote "MENU",
                     :url => menus_url(:action => 'openmenu'),
                     :loading => "Element.show('spinner3')",
@@ -46,9 +44,9 @@
 
          <%= link_to_remote "PHOTOS",
                     :url => map_url(:action => 'openphotos'),
-                    :loading => "Element.show('spinner5')",
-                    :loaded => "Element.hide('spinner5'), Element.hide('menu'), Element.hide('event'), Element.hide('sports')",
-                    :completed => "Element.show('photos')" %>  <big><img alt="spinner" id="spinner5" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
+                    :loading => "Element.show('spinner1')",
+                    :loaded => "Element.hide('spinner1'), Element.hide('menu'), Element.hide('event'), Element.hide('sports')",
+                    :completed => "Element.show('photos')" %>  <big><img alt="spinner" id="spinner1" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
          <br/>
                   
          <%= link_to_remote "SPORTS PAGE",
@@ -56,53 +54,49 @@
                     :loading => "Element.show('spinner6')",
                     :loaded => "Element.hide('spinner6'), Element.hide('menu'), Element.hide('photos'), Element.hide('event')",
                     :completed => "Element.show('sports')" %>  <big><img alt="spinner" id="spinner6" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
-        
-
-      </div>
+     </div>
   <div id="contact-link">
        <%= link_to_remote "CONTACT US",
                     :url => menus_url(:action => 'opencontact'),
                     :loading => "Element.show('spinner2')",
                     :loaded => "Element.hide('spinner2')",
                     :completed => "Element.show('contact')" %>
-  <big><img alt="spinner" id="spinner2" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
-   
+       <big><img alt="spinner" id="spinner2" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
   </div>
      
    <div id="contact" style="display: none"> 
         <%= render :partial => 'contact' %>                  
    </div>
    <br/>
-   <img src="/images/otter1.jpg" width="250" height="175"  border="4" alt="Otter Lodge" />
+       <img src="/images/otter1.jpg" width="250" height="175"  border="4" alt="Otter Lodge" />
        <div id="blurb" align="left"> 
-        <h4>There's a reason the slogan for this restaurant/pub is "Good Food, Good People, Good Times" since it offers all this and more. Let's start with the food. We have award winning wings, a great Southwestern Chicken sandwich
-or wrap, terrific burgers, massive sandwiches and wonderful salads. And don't forget about the Otter Plate, a little bit of everything. We have 19 beers on tap to choose from, including Rochester Custom Brewcrafter's Wet Whiskers IPA.  The sports atmosphere is casual
-but classic with warm oak accents throughout. And any sports bar is a 1000 times better if you can catch all your favorite sporting events on several HDTV plasma
-screens!! Add wi fi, private party rooms and other extras and now is the perfect time to visit the Otter Lodge with friends or to meet new people.</h4>
-</div>           
+            <h4>There's a reason the slogan for this restaurant/pub is "Good Food, Good People, Good Times" since it offers all this and more. Let's start with the food. We have award winning wings, a great Southwestern Chicken sandwich
+                or wrap, terrific burgers, massive sandwiches and wonderful salads. And don't forget about the Otter Plate, a little bit of everything. We have 19 beers on tap to choose from, including Rochester Custom Brewcrafter's Wet Whiskers IPA.  The sports atmosphere is casual
+                but classic with warm oak accents throughout. And any sports bar is a 1000 times better if you can catch all your favorite sporting events on several HDTV plasma
+                screens!! Add wi fi, private party rooms and other extras and now is the perfect time to visit the Otter Lodge with friends or to meet new people.</h4>
+       </div>           
    <img src="/images/otter2.jpg" width="250" height="175"  border="4" alt="Otter Lodge" />
     <br/>
     <br/>
    <div id="emp" align="center">
         <%= button_to "EMPLOYEES ONLY", :controller => 'account', :action => 'login', :layout => false %>
    </div> 
-           
-    <div id="address" align="center">
-    </div>
-     </div>
+</div>
       
       <div id="main">
           <%= @content_for_layout %>
-	      </div>
-          <small><div id="sign" align="center">
+	  </div>
+	  
+      <small><div id="sign" align="center">
             Developed by <a href="http://www.richdownie.com">Downie</a> * Hosted by <a href="http://www.diglearning.com">Diglearning</a><br/>
             Powered by <a href="http://www.rubyonrails.com">Rails</a>
-          </div></small>
-      <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-_uacct = "UA-917431-1";
-urchinTracker();
-</script>
-</body>
+      </div></small>
+              
+              <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+              </script>
+              <script type="text/javascript">
+              _uacct = "UA-917431-1";
+              urchinTracker();
+              </script>
+  </body>
 </html>

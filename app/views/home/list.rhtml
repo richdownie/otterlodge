@@ -1,28 +1,13 @@
 
-
-      <br/>
-   
    <div id="photos" style="display: none">      
-     <%= link_to_remote "",
-                    :url => menus_url(:action => 'closephotos'),
-                    :loading => "Element.show('map'), Element.show('special-list')", 
-                    :completed => "Element.hide('photos')" %>   
      <%= render :partial => 'photos' %>             
    </div>
 
-   <div id="menu" style="display: none"> 
-     <%= link_to_remote "",
-                    :url => menus_url(:action => 'closemenu'),
-                    :loading => "Element.show('map'), Element.show('special-list')", 
-                    :completed => "Element.hide('menu')" %>   
+   <div id="menu" style="display: none">  
      <%= render :partial => 'menu' %>                  
    </div>
    
-   <div id="event" style="display: none"> 
-     <%= link_to_remote "",
-                    :url => menus_url(:action => 'closeevent'),
-                    :loading => "Element.show('map'), Element.show('special-list')", 
-                    :completed => "Element.hide('event')" %>        
+   <div id="event" style="display: none">        
      <%= render :partial => 'event' %>             
    </div>
 
@@ -33,15 +18,13 @@
 
   <div id="special-list" align="center">
     <table cellpadding="5" cellspacing="0" border="6">
-      <br/>
-       
+      <br/>       
        <big><div  id="specials" align="center"><img alt="spinner" id="spinner" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" />WEEKLY SPECIALS</div></big>
-      
-        <tr>
+         <tr>
             <th>DAY</th>
             <th>LUNCH</th>
             <th>DINNER</th>
-        </tr> 
+         </tr> 
        <% for special in @specials -%>
          <tr  align="center" valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
             <td>
