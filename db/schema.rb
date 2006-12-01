@@ -6,6 +6,7 @@ ActiveRecord::Schema.define(:version => 5) do
 
   create_table "events", :force => true do |t|
     t.column "name", :string
+    t.column "date", :datetime
   end
 
   create_table "friends", :force => true do |t|
