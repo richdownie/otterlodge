@@ -3,6 +3,9 @@
         <% for event in @events %>
           <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
             <h4><td>
+            <%=h (event.date.dateonly) %>
+            </td></h4>
+            <h4><td>
             <%= event.name %>
             </td></h4>
 	      </tr>
