@@ -21,7 +21,7 @@
      <div id="links" align="left">
         <%= link_to_remote "HOME",
                     :url => menus_url(:action => 'list'),
-                    :loading => "Element.show('spinner5'), Element.show('hooks')",
+                    :loading => "Element.show('spinner5')",
                     :loaded => "Element.hide('spinner5'), Element.hide('event'), Element.hide('friends'), Element.hide('photos'), Element.hide('sports'), Element.hide('menu'), Element.hide('jobs')",
                     :completed => "Element.show('menu')" %> 
                     <big><img alt="spinner" id="spinner5" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
