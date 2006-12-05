@@ -1,1 +1,2 @@
 page.visual_effect :SlideDown, 'friends'
+page.visual_effect :appear, 'hooks4'
