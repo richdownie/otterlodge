@@ -1,3 +1,4 @@
 page.visual_effect :SlideDown, 'menu'
+page.visual_effect :appear, 'hooks'
 
 
