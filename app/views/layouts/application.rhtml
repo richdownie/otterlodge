@@ -15,7 +15,9 @@
 
 
     <div id="logo" align="center">
-      <img src="/images/logo_otterlodge.jpg" width="120" height="125" alt="Otter Lodge" />
+      <img id="rich1"  style="display: none" src="/images/hockeypack.jpg" width="160" height="70" alt="Otter Lodge" />
+      <img id="rich" src="/images/logo_otterlodge.jpg" width="120" height="125" alt="Otter Lodge" />
+      <img id="rich2"  style="display: none" src="/images/nfl.jpg" width="160" height="70" alt="Otter Lodge" />
     </div>
     <div id="banner">   
        <small>1776 Monore Ave Rochester, NY 14618</small>
@@ -25,7 +27,7 @@
         <%= link_to_remote "HOME",
                     :url => menus_url(:action => 'list'),
                     :loading => "Element.show('spinner5')",
-                    :loaded => "Element.hide('spinner5'), Element.hide('event'), Element.hide('friends'), Element.hide('photos'), Element.hide('sports'), Element.hide('menu'), Element.hide('jobs')",
+                    :loaded => "Element.hide('spinner5'), Element.hide('event'), Element.hide('friends'), Element.hide('photos'), Element.hide('sports'), Element.hide('menu'), Element.hide('rich1'), Element.hide('rich2'), Element.hide('jobs')",
                     :completed => "Element.show('menu')" %> 
                     <big><img alt="spinner" id="spinner5" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
         <br/>
@@ -33,7 +35,7 @@
        <%= link_to_remote "MENU",
                     :url => menus_url(:action => 'openmenu'),
                     :loading => "Element.show('spinner3')",
-                    :loaded => "Element.hide('spinner3'), Element.hide('event'), Element.hide('friends'), Element.hide('photos'), Element.hide('sports'), Element.hide('jobs')",
+                    :loaded => "Element.hide('spinner3'), Element.hide('event'), Element.hide('friends'), Element.hide('photos'), Element.hide('sports'), Element.hide('rich1'), Element.hide('rich2'), Element.hide('jobs')",
                     :completed => "Element.show('special-list'), Element.show('map')" %> 
                     <big><img alt="spinner" id="spinner3" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
         <br/>
@@ -41,14 +43,14 @@
        <%= link_to_remote "EVENTS",
                     :url => menus_url(:action => 'openevent'),
                     :loading => "Element.show('spinner4')",
-                    :loaded => "Element.hide('spinner4'), Element.hide('menu'), Element.hide('friends'), Element.hide('photos'), Element.hide('sports'), Element.hide('jobs')",
+                    :loaded => "Element.hide('spinner4'), Element.hide('menu'), Element.hide('friends'), Element.hide('photos'), Element.hide('sports'), Element.hide('rich1'), Element.hide('rich2'), Element.hide('jobs')",
                     :completed => "Element.show('event')" %>  <big><img alt="spinner" id="spinner4" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
         <br/>                   
 
          <%= link_to_remote "PHOTOS",
                     :url => map_url(:action => 'openphotos'),
                     :loading => "Element.show('spinner1')",
-                    :loaded => "Element.hide('spinner1'), Element.hide('menu'), Element.hide('friends'), Element.hide('event'), Element.hide('sports'), Element.hide('jobs')",
+                    :loaded => "Element.hide('spinner1'), Element.hide('menu'), Element.hide('friends'), Element.hide('event'), Element.hide('sports'), Element.hide('rich1'), Element.hide('rich2'), Element.hide('jobs')",
                     :completed => "Element.show('photos')" %>  <big><img alt="spinner" id="spinner1" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
          <br/>
                   
@@ -62,7 +64,7 @@
          <%= link_to_remote "FRIENDS",
                     :url => menus_url(:action => 'openfriends'),
                     :loading => "Element.show('spinner7')",
-                    :loaded => "Element.hide('spinner7'), Element.hide('menu'), Element.hide('photos'), Element.hide('event'), Element.hide('sports'), Element.hide('jobs')",
+                    :loaded => "Element.hide('spinner7'), Element.hide('menu'), Element.hide('photos'), Element.hide('event'), Element.hide('sports'), Element.hide('rich1'), Element.hide('rich2'), Element.hide('jobs')",
                     :completed => "Element.show('friends')" %>  <big><img alt="spinner" id="spinner7" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
        <br/>
                   

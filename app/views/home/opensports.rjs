@@ -1,1 +1,4 @@
 page.visual_effect :SlideDown, 'sports'
+
+page.visual_effect :appear, 'rich1'
+page.visual_effect :appear, 'rich2'
