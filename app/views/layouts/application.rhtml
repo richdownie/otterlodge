@@ -21,7 +21,7 @@
      <div id="links" align="left">
         <%= link_to_remote "HOME",
                     :url => menus_url(:action => 'list'),
-                    :loading => "Element.show('spinner5')",
+                    :loading => "Element.show('spinner5'), Element.show('hooks')",
                     :loaded => "Element.hide('spinner5'), Element.hide('event'), Element.hide('friends'), Element.hide('photos'), Element.hide('sports'), Element.hide('menu'), Element.hide('jobs')",
                     :completed => "Element.show('menu')" %> 
                     <big><img alt="spinner" id="spinner5" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
@@ -98,6 +98,9 @@
            <div id="coupons">
     	     <img src="/images/coupon1.jpg" width="220" height="100"  border="4" alt="Otter Lodge" />
     	   </div>
+    	   <div id="hooks" style="display: none">      
+            <%= render :partial => 'hooks' %> 
+          </div>
 	   </div>
       <div id="main">
           <%= @content_for_layout %>
