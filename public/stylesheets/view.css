@@ -71,7 +71,7 @@
   padding-top: 0em;
   padding-left: 1em;
   padding-right: 1em;
-  padding-bottom: 70em;
+  padding-bottom: 65em;
   width: 16em;
   color: yellow;
   background: green;
@@ -85,9 +85,7 @@ h2 {
 	width:100%;
 	clear:both;
 	height:50px;
-	border-top:1px solid #000;
-	border-bottom:1px solid #000;
-	background-color: green;
+	background-color: white;
 	color: #000000;
 	text-align:center;
 	position:relative;
