@@ -106,23 +106,35 @@ th {
 
 #special-list .list-line-even {
 background: #FFFFCC;
+  font:  80% Garamond, sans-serif;
 }
 #special-list .list-line-odd {
 background: #CCFFCC ;
+  font:  80% Garamond, sans-serif;
 }
 
 #event-list .list-line-even {
-background: #FFFFCC;
+background: #303030;
+  color: white;
+  font:  80% Garamond, sans-serif;
 }
 #event-list .list-line-odd {
-background: #CCFFCC ;
+background: #D8D8D8 ;
+  font:  80% Garamond, sans-serif;
+}
+
+#event-list th {
+  font:  100% Garamond, sans-serif;
+  color: yellow;
+  background: black;
+  font-weight: bold;
 }
 
 #side a:link {
   font:  95% Garamond, sans-serif;
   color: yellow;
   font-weight: bold;
-	text-decoration: none;
+  text-decoration: none;
 }
 #side a:visited { 
 	color: yellow;
