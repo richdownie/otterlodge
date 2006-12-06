@@ -106,11 +106,16 @@ th {
 
 #special-list .list-line-even {
 background: #FFFFCC;
-  font-size: 14px;
 }
 #special-list .list-line-odd {
 background: #CCFFCC ;
-  font-size: 14px;
+}
+
+#event-list .list-line-even {
+background: #FFFFCC;
+}
+#event-list .list-line-odd {
+background: #CCFFCC ;
 }
 
 #side a:link {
