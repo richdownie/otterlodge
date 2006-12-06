@@ -4,8 +4,8 @@ class CreateEvents < ActiveRecord::Migration
        t.column :name, :string
        t.column :date, :timestamp
     end
-      Event.create :name => "Halloween Party"
-      Event.create :name => "Bills vs. Dolphins"
+      Event.create :name => "Halloween Party", :date => '12/12/2007'
+      Event.create :name => "Bills vs. Dolphins", :date => '12/12/2007'
   end
 
   def self.down
