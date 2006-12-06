@@ -1,0 +1,19 @@
+<% # The following is used when the browser doesn't have javascript enabled %>
+<% classAttr = cycle("", "class=\"even\"") %>
+<% @options = params.merge(:controller => '/jobs', :action => "view", :id => job.send("#{Job.primary_key}")) %>
+
+<tr <%= classAttr %> id="<%= element_row_id(@options) %>" <%= "style=\"display: none;\"" if hidden %>>
+  <% for scaffold_column in scaffold_columns %>
+    <% column_value = eval(scaffold_column.eval) rescue nil %>
+    <td class="<%= column_class(scaffold_column.name, column_value, current_sort(params), scaffold_column.class_name) %>" >
+      <%= format_column(column_value, scaffold_column.sanitize?) %>
+    </td>
+  <% end %>
+  <td class="actions">
+    <table cellpadding="0" cellspacing="0">
+      <tr>
+
+      </tr>
+    </table>
+  </td>
+</tr>
