@@ -1,0 +1,2 @@
+module CrudjobsHelper
+end
