@@ -70,7 +70,7 @@
                     :completed => "Element.show('friends')" %>  <big><img alt="spinner" id="spinner7" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
        <br/>
         
-        <%= link_to "JOBS", :controller => 'jobs', :action => 'list' %>                  
+                          
 
      
      </div>
@@ -86,6 +86,7 @@
    <div id="contact" style="display: none"> 
         <%= render :partial => 'contact' %>                  
    </div>
+   
    <br/>
        <img src="/images/otter1.jpg" width="250" height="175"  border="4" alt="Otter Lodge" />
        <div id="blurb" align="left"> 
@@ -99,6 +100,7 @@
     <br/>
    <div id="emp" align="center">
         <%= button_to "EMPLOYEES ONLY", :controller => 'account', :action => 'login', :layout => false %>
+        <%= button_to "JOB OPPORTUNITES", :controller => 'jobs', :action => 'list' %>
    </div> 
 </div>
        <div id="side2" align="center">
