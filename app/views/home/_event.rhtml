@@ -1,17 +1,16 @@
  <div id="event-list" align="center">
     <table cellpadding="5" cellspacing="0">
-        <% for event in @events %>
+       <br/>
+          <tr>
+          <th>DATE</th>
+          <th>EVENT</th>
+          </tr>
+          <% for event in @events %>
           <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
-            <h4><td>
-					  <% if !event.date.nil? -%>
-            <%=h (event.date.strftime("%m/%d/%Y")) %>
-						<% end %>
-            </td></h4>
-            <h4><td>
-            <%= event.name %>
-            </td></h4>
+            <td><%=h (event.date.strftime("%m/%d/%Y")) %></td>
+            <td><%= event.name %></td>
 	      </tr>
-        <% end %>
+         <% end %>
     </table>
   </div>
 <br/>
