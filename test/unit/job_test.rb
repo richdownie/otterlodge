@@ -49,5 +49,6 @@ class JobTest < Test::Unit::TestCase
     	assert job.errors.invalid?(attr_name.to_sym), "Should be an error message for :#{attr_name}"
 		end
 	end
+	
 end
 

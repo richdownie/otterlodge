@@ -4,7 +4,12 @@ class SpecialTest < Test::Unit::TestCase
   fixtures :specials
 
   # Replace this with your real tests.
-  def test_truth
-    assert true
+  def test_invalid_with_empty_attributes
+    special = Special.new
+    assert !special.valid?
+    assert special.errors.invalid?(:day)
+    assert special.errors.invalid?(:lunch)
+    assert special.errors.invalid?(:dinner)
   end
+  
 end
