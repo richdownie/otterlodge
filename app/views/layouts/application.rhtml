@@ -25,7 +25,7 @@
        <small>1776 Monore Ave Rochester, NY 14618</small>
     </div>
 <div id="side">
-     <div id="links" align="left">
+     <div id="links" align="center">
         <%= link_to_remote "HOME",
                     :url => menus_url(:action => 'list'),
                     :loading => "Element.show('spinner5')",
@@ -74,7 +74,7 @@
 
      
      </div>
-  <div id="contact-link">
+  <div id="contact-link" align="center">
        <%= link_to_remote "CONTACT US",
                     :url => menus_url(:action => 'opencontact'),
                     :loading => "Element.show('spinner2')",
@@ -99,16 +99,12 @@
     <br/>
     <br/>
    <div id="emp" align="center">
-        <p><a href="http://www.theotterlodge.com/jobs/list"><img src="/images/help.jpg" width="110" height="70" /></a></p>
-        <p><a href="http://www.theotterlodge.com/login"><img src="/images/emponly.jpg" width="110" height="70" /></a></p>
+        <p><a href="http://www.theotterlodge.com/jobs/list"><img src="/images/help.jpg" width="110" height="70" /></a>
+       <a href="http://www.theotterlodge.com/login"><img src="/images/emponly.jpg" width="110" height="70" /></a></p>
     </div> 
 </div>
        <div id="side2" align="center">
        <br/>
-           <div id="coupons">
-    	     <img src="/images/coupon1.jpg" width="220" height="100"  border="4" alt="Otter Lodge" />
-    	   </div>
-    	     <img src="/images/coupon3.jpg" width="220" height="100"  border="4" alt="Otter Lodge" />
 <div id="hooks" style="display: none">      
    <%= render :partial => 'hooks' %> 
 </div>
@@ -124,6 +120,13 @@
     <p>Party Room</p>
     <p>Catering</p>
 </div>
+           <div id="coupons">
+    	     <img src="/images/coupon1.jpg" width="220" height="100"  border="4" alt="Otter Lodge" />
+    	   </div>
+    	   <div>
+    	     <img src="/images/coupon3.jpg" width="220" height="100"  border="4" alt="Otter Lodge" />
+            </div>
+
 
 	   </div>
       <div id="main">
