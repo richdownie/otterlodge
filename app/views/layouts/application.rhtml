@@ -27,7 +27,7 @@
 <div id="side">
      <div id="links" align="center">
         <%= link_to_remote "HOME",
-                    :url => menus_url(:action => 'list'),
+                    :url => menus_url(:action => 'openlist'),
                     :loading => "Element.show('spinner5')",
                     :loaded => "Element.hide('spinner5'), Element.hide('event'), Element.hide('friends'), Element.hide('photos'), Element.hide('sports'), Element.hide('menu'), Element.hide('rich1'), Element.hide('rich2'), Element.hide('rich3'), Element.hide('rich4'), Element.hide('jobs')",
                     :completed => "Element.show('menu')" %> 
