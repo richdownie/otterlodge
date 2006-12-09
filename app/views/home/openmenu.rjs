@@ -1,13 +1,13 @@
 page.visual_effect :SlideDown, 'menu'
 page.visual_effect :fade, 'coupons'
 
-page.delay(3.0)do
+page.delay(1.0)do
 page.visual_effect :appear, 'hooks1'
 end
-page.delay(3.6)do
+page.delay(1.6)do
 page.visual_effect :appear, 'coupons'
 end
 
-page.delay(4.0)do
+page.delay(2.0)do
 page.visual_effect :pulsate, 'hooks1'
 end
