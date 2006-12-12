@@ -1,0 +1,15 @@
+#suggestions {
+  padding: 1em;
+  margin-top: 1em;
+  background-color: #cccccc;
+  font-weight: bold;
+  border: 4px solid;
+}
+#suglink {
+  margin-left: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  color: white;
+  margin-bottom: 50px;
+	text-decoration: none;
+}
