@@ -5,6 +5,7 @@
 <head>
   <title>Otter Lodge</title>
   <%= stylesheet_link_tag "view", :media => "all" %>
+  <%= stylesheet_link_tag "rightside", :media => "all" %>
   <%= javascript_include_tag :defaults %>
 </head>
 <body id="view">
@@ -103,6 +104,7 @@
        <a href="http://www.theotterlodge.com/login"><img src="/images/emponly.jpg" width="110" height="70" /></a></p>
     </div> 
 </div>
+
        <b><div id="side2" align="center">
        <br/>
 <div id="hooks1" style="display: none">      
@@ -127,10 +129,13 @@
     	     <img src="/images/coupon3.jpg" width="220" height="100"  border="4" alt="Otter Lodge" />
             </div></b>
 
-
-	   </div>
+</div>
       <div id="main">
           <%= @content_for_layout %>
+          <br/><br/>
+                  <div id="suglink" align="center">
+       <%= link_to 'Suggestions?', :controller => 'suggestions', :action => 'new' %>
+    </div>
 	  </div>
 
 <div id="footer">      
