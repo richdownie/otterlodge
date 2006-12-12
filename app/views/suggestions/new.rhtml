@@ -1,8 +1,21 @@
-<h1>New suggestion</h1>
 
-<%= start_form_tag :action => 'create' %>
-  <%= render :partial => 'form' %>
-  <%= submit_tag "Create" %>
-<%= end_form_tag %>
+<h4 align="left"><%= link_to 'HOME', :controller => 'home', :action => 'list' %></h4>
+<style>
+#suggestions {
+  padding: 1em;
+  margin-top: 1em;
+  background-color: #cccccc;
+  font-weight: bold;
+  border: 4px solid;
+}
+</style>
+<div id="suggestions">
+    <h3>Send us Your Suggestions</h3>
+    
+    <%= start_form_tag :controller => 'suggestions', :action => 'create' %>
+      <%= render :partial => 'form' %>
+      <%= submit_tag "Submit" %>
+    <%= end_form_tag %>
+    
 
-<%= link_to 'Back', :action => 'list' %>
+</div>
