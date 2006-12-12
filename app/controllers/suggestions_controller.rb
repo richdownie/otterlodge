@@ -1,4 +1,6 @@
 class SuggestionsController < ApplicationController
+  layout false
+
   def index
     list
     render :action => 'list'
@@ -24,7 +26,7 @@ class SuggestionsController < ApplicationController
     @suggestion = Suggestion.new(params[:suggestion])
     if @suggestion.save
       flash[:notice] = 'Suggestion was successfully created.'
-      redirect_to :action => 'list'
+      redirect_to :controller => 'home', :action => 'list'
     else
       render :action => 'new'
     end
