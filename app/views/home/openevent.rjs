@@ -11,3 +11,19 @@ end
 page.delay(2.0)do
 page.visual_effect :pulsate, 'hooks2'
 end
+
+page.delay(3.0)do
+page.visual_effect :fade, 'rich'
+end
+
+page.delay(3.9)do
+page.visual_effect :appear, 'new'
+end
+
+page.delay(5.0)do
+page.visual_effect :fade, 'new'
+end
+
+page.delay(5.9)do
+page.visual_effect :appear, 'rich'
+end
