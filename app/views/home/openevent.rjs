@@ -13,17 +13,28 @@ page.visual_effect :pulsate, 'hooks2'
 end
 
 page.delay(3.0)do
-page.visual_effect :fade, 'rich'
+page.visual_effect :BlindUp, 'rich'
 end
 
-page.delay(3.9)do
-page.visual_effect :appear, 'new'
+page.delay(3.8)do
+page.visual_effect :BlindDown, 'textny'
 end
 
-page.delay(5.0)do
-page.visual_effect :fade, 'new'
+page.delay(7.0)do
+page.visual_effect :BlindUp, 'textny'
 end
 
-page.delay(5.9)do
-page.visual_effect :appear, 'rich'
+page.delay(3.8)do
+page.visual_effect :BlindDown, 'new'
 end
+
+page.delay(7.0)do
+page.visual_effect :BlindUp, 'new'
+end
+
+page.delay(7.8)do
+page.visual_effect :BlindDown, 'rich'
+end
+
+
+
