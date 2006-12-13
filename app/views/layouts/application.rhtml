@@ -106,35 +106,32 @@
     </div> 
 </div>
 
-       <b><div id="side2" align="center">
-       <br/>
-<div id="hooks1" style="display: none">      
-  Lunch - Dinner
-</div>
-<div id="hooks2" style="display: none">      
-   Party Room - Catering
-</div>
-<div id="hooks3" style="display: none">      
-    Lottery - Wi-Fi - ATM
-</div>
-
-
-
+    <b><div id="side2" align="center">
+           <br/>
+            <div id="hooks1" style="display: none">      
+              Lunch - Dinner
+            </div>
+            <div id="hooks2" style="display: none">      
+               Party Room - Catering
+            </div>
+            <div id="hooks3" style="display: none">      
+                Lottery - Wi-Fi - ATM
+            </div>
 <style>
 		#explode {
-			position : absolute;
-			left : 200px;
-			top : 100px;
-			background : black;
-			width : 500px;
-			height : 450px;
-			text-align : center;
-			padding-top : 2em;
-			display : none;
-			font-size : 33px;
+		position : absolute;
+		left : 200px;
+		top : 100px;
+		background : black;
+		width : 500px;
+		height : 450px;
+		text-align : center;
+		padding-top : 2em;
+		display : none;
+		font-size : 33px;
 		}
-	</style>
-	<script>
+</style>
+<script>
 	function testExplode(start){
 		dojo.lfx.explode(start, "explode", 400).play();
 	}
@@ -142,16 +139,17 @@
 	function testImplode(start){
 		dojo.lfx.implode("explode", start, 250).play();
 	}
-
-	</script>
-   
+</script>
+  <div id="coupons"> 
 	<div id="explode"><small><a href="javascript:;" onclick="testImplode(this)">[CLOSE]</a></small>
-	<p><a href="/docs/banqMenu.pdf" /><img src="/images/couponlive.jpg" width="220" height="100"  border="4" alt="Otter Lodge" /></a></p></div><br/>
-	<a href="javascript:;" onclick="testExplode(this)"><img src="/images/couponlive.jpg" width="220" height="100"  border="4" alt="Otter Lodge" /></a><br/>
+        <p><a href="/docs/banqMenu.pdf" /><img src="/images/couponlive.jpg" width="220" height="100"  border="4" alt="Otter Lodge" /></a></p></div><br/>
+        <a href="javascript:;" onclick="testExplode(this)"><img src="/images/couponlive.jpg" width="220" height="100"  border="4" alt="Otter Lodge" /></a><br/>
 
 	<div id="explode"><small><a href="javascript:;" onclick="testImplode(this)">[CLOSE]</a></small>
-	<p><a href="/docs/banqMenu.pdf" /><img src="/images/couponlive.jpg" width="220" height="100"  border="4" alt="Otter Lodge" /></a></p></div><br/>
-	<a href="javascript:;" onclick="testExplode(this)"><img src="/images/couponlive.jpg" width="220" height="100"  border="4" alt="Otter Lodge" /></a><br/>
+    	<p><a href="/docs/banqMenu.pdf" /><img src="/images/couponlive.jpg" width="220" height="100"  border="4" alt="Otter Lodge" /></a></p></div><br/>
+    	<a href="javascript:;" onclick="testExplode(this)"><img src="/images/couponlive.jpg" width="220" height="100"  border="4" alt="Otter Lodge" /></a><br/> 
+    	
+   </div>
  </div> 
            
 
