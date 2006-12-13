@@ -3,6 +3,7 @@ set :db_user, "rdownie_otterdb"
 set :db_password, "ott3rl0dg3"
 
 set :keep_releases, 3
+set :use_sudo, false
 # =============================================================================
 # REQUIRED VARIABLES
 # =============================================================================
