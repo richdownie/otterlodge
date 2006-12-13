@@ -7,6 +7,7 @@
   <%= stylesheet_link_tag "view", :media => "all" %>
   <%= stylesheet_link_tag "rightside", :media => "all" %>
   <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag "dojo" %>
 </head>
 <body id="view">
     <div id="banner2">   
@@ -118,16 +119,41 @@
 </div>
 
 
-<div id="hooks4" style="display: none">      
-    <p></p>
-    <p></p>
-</div>
-           <div id="coupons">
-           <br/>
-    	     <img src="/images/coupon1.jpg" width="220" height="100"  border="4" alt="Otter Lodge" />
-    	   
-    	     <img src="/images/coupon3.jpg" width="220" height="100"  border="4" alt="Otter Lodge" />
-            </div></b>
+
+<style>
+		#explode {
+			position : absolute;
+			left : 200px;
+			top : 100px;
+			background : black;
+			width : 500px;
+			height : 450px;
+			text-align : center;
+			padding-top : 2em;
+			display : none;
+			font-size : 33px;
+		}
+	</style>
+	<script>
+	function testExplode(start){
+		dojo.lfx.explode(start, "explode", 400).play();
+	}
+
+	function testImplode(start){
+		dojo.lfx.implode("explode", start, 250).play();
+	}
+
+	</script>
+   
+	<div id="explode"><small><a href="javascript:;" onclick="testImplode(this)">[CLOSE]</a></small>
+	<p><a href="/docs/banqMenu.pdf" /><img src="/images/couponlive.jpg" width="220" height="100"  border="4" alt="Otter Lodge" /></a></p></div><br/>
+	<a href="javascript:;" onclick="testExplode(this)"><img src="/images/couponlive.jpg" width="220" height="100"  border="4" alt="Otter Lodge" /></a><br/>
+
+	<div id="explode"><small><a href="javascript:;" onclick="testImplode(this)">[CLOSE]</a></small>
+	<p><a href="/docs/banqMenu.pdf" /><img src="/images/couponlive.jpg" width="220" height="100"  border="4" alt="Otter Lodge" /></a></p></div><br/>
+	<a href="javascript:;" onclick="testExplode(this)"><img src="/images/couponlive.jpg" width="220" height="100"  border="4" alt="Otter Lodge" /></a><br/>
+ </div> 
+           
 
 </div>
       <div id="main">
