@@ -1,3 +1,14 @@
+<%= link_to 'Home Page', :controller => 'home', :action => 'list' %>
+<br/>
+<div id="buttons" align="center">
+ <br/>
+    <br/>
+    <br/>
+    <%= button_to 'Specials', :controller => 'crudspecials', :action => 'list' %>
+    <%= button_to 'Events', :controller => 'crudevents', :action => 'list' %>
+    <%= button_to "Jobs", :controller => 'crudjobs', :action => 'list' %> 
+</div>
+
 <h1>Listing suggestions</h1>
 
 <table>
