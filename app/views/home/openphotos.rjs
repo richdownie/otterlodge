@@ -1,14 +1,25 @@
 page.visual_effect :SlideDown, 'photos'
-page.visual_effect :fade, 'coupons'
 
-page.delay(1.0)do
+page.delay(1.6)do
+page.visual_effect :fade, 'coupons'
+end
+
+page.delay(1.6)do
+page.visual_effect :fade, 'cards'
+end
+
+page.delay(2.6)do
 page.visual_effect :appear, 'hooks3'
 end
-page.delay(1.6)do
+
+page.delay(2.8)do
 page.visual_effect :appear, 'coupons'
 end
 
+page.delay(2.8)do
+page.visual_effect :appear, 'cards'
+end
 
-page.delay(2.0)do
+page.delay(3.5)do
 page.visual_effect :pulsate, 'hooks3'
 end
