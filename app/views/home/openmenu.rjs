@@ -8,6 +8,10 @@ page.delay(1.6)do
 page.visual_effect :fade, 'cards'
 end
 
+page.delay(1.6)do
+page.visual_effect :fade, 'emp'
+end
+
 page.delay(2.6)do
 page.visual_effect :appear, 'hooks1'
 end
@@ -18,6 +22,10 @@ end
 
 page.delay(2.8)do
 page.visual_effect :appear, 'cards'
+end
+
+page.delay(2.8)do
+page.visual_effect :appear, 'emp'
 end
 
 page.delay(3.5)do
