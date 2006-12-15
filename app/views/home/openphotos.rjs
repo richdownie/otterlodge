@@ -23,3 +23,18 @@ end
 page.delay(3.5)do
 page.visual_effect :pulsate, 'hooks3'
 end
+
+page.delay(13.0)do
+page.visual_effect :BlindUp, 'rich'
+end
+
+page.delay(13.8)do
+page.visual_effect :BlindDown, 'santa'
+end
+
+page.delay(17.0)do
+page.visual_effect :BlindUp, 'santa'
+end
+page.delay(17.8)do
+page.visual_effect :BlindDown, 'rich'
+end
