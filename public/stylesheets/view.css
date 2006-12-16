@@ -76,6 +76,19 @@
   color: yellow;
   background: green;
 }
+
+#side2 a:link {
+	color: yellow;
+	text-decoration: none;
+    font-weight: bold;
+    font:  80% Garamond, sans-serif;
+}
+
+#side2 a:visited { 
+	color: yellow;
+	text-decoration: none;
+	}
+	
 h2 {
   font:  150% LongIsland, sans-serif;
   color: #226;
