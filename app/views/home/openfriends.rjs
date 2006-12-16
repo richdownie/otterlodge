@@ -1,16 +1,5 @@
 page.visual_effect :SlideDown, 'friends'
 
-page.delay(6.0)do
-page.visual_effect :BlindUp, 'rich'
-end
-
-page.delay(6.8)do
-page.visual_effect :BlindDown, 'santa'
-end
-
-page.delay(10.0)do
-page.visual_effect :BlindUp, 'santa'
-end
-page.delay(10.8)do
-page.visual_effect :BlindDown, 'rich'
+page.delay(3.0)do
+page.visual_effect :Puff, 'santa1'
 end
