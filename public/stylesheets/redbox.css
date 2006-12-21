@@ -13,6 +13,12 @@
   filter: alpha(opacity=60);
 }
 
+#dev   {
+  padding-right: 20px;
+  text-align: right;
+  font:  60% Garamond, sans-serif;
+  }
+  
 #me   {
   text-align: center;
   font:  110% Garamond, sans-serif;
