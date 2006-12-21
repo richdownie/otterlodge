@@ -16,7 +16,8 @@
        <small>"Good food, good people, good times"</small>
     </div>
        
-
+       
+          
 
     <div id="logo" align="center">
       <img id="rich3"  style="display: none" src="/images/hockey.jpg" width="90" height="115" alt="Otter Lodge" />
@@ -164,26 +165,25 @@
 </div>
 
       <div id="main">
+
           <%= @content_for_layout %>
           <br/><br/>
-                  <div id="suglink" align="center">
-       <%= link_to 'Suggestions?', :controller => 'suggestions', :action => 'new' %>
-       
-
-    </div>
+           <div id="suglink" align="center">
+             <%= link_to 'Suggestions?', :controller => 'suggestions', :action => 'new' %>
+             <div id="me" style="display: none">
+               <a href="#" onclick="RedBox.close(); return false;" >[CLOSE]</a><br/><br/>
+               <img src="/images/me.jpg" width="185" height="255"  border="4" /><br/><br/>
+                <%= mail_to("richdownie@gmail.com", "richdownie@gmail.com",
+                        :endocde => "javascript") %> 
+             </div>
+           </div>
 	  </div>
 
 <div id="footer">      
      <small><div id="sign" align="center">
-
-      Developed by <%= link_to_redbox('Downie', 'me')%> * Hosted by <a href="http://www.diglearning.com">Diglearning</a><br/>
+       Hosted by <a href="http://www.diglearning.com">Diglearning</a><br/>
       <p><a href="http://www.rubyonrails.com/"><img src="/images/rails2.jpg" width="110" height="18" /></a></p>
-       <div id="me" style="display: none">
-         <br/>
-         <img src="/images/me.jpg" width="225" height="155"  border="4" />
-       </div>
-      </div></small>
-  <p></p>
+    </div></small>
 
 </div>
               <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
