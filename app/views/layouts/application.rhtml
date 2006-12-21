@@ -6,8 +6,10 @@
   <title>Otter Lodge</title>
   <%= stylesheet_link_tag "view", :media => "all" %>
   <%= stylesheet_link_tag "rightside", :media => "all" %>
+  <%= stylesheet_link_tag 'redbox' %> 
   <%= javascript_include_tag :defaults %>
   <%= javascript_include_tag "dojo" %>
+  <%= javascript_include_tag 'redbox' %>
 </head>
 <body id="view">
     <div id="banner2">   
@@ -166,14 +168,20 @@
           <br/><br/>
                   <div id="suglink" align="center">
        <%= link_to 'Suggestions?', :controller => 'suggestions', :action => 'new' %>
+       
+
     </div>
 	  </div>
 
 <div id="footer">      
      <small><div id="sign" align="center">
-            Developed by <a href="http://www.richdownie.com">Downie</a> * Hosted by <a href="http://www.diglearning.com">Diglearning</a><br/>
-      <p><a href="http://www.rubyonrails.com/"><img src="/images/rails2.jpg" width="110" height="18" /></a></p>
 
+      Developed by <%= link_to_redbox('Downie', 'me')%> * Hosted by <a href="http://www.diglearning.com">Diglearning</a><br/>
+      <p><a href="http://www.rubyonrails.com/"><img src="/images/rails2.jpg" width="110" height="18" /></a></p>
+       <div id="me" style="display: none">
+         <br/>
+         <img src="/images/me.jpg" width="225" height="155"  border="4" />
+       </div>
       </div></small>
   <p></p>
 
