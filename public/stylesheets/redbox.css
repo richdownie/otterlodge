@@ -15,13 +15,13 @@
 
 #dev   {
   padding-right: 20px;
-  text-align: right;
+  text-align: center;
   font:  60% Garamond, sans-serif;
   }
   
 #me   {
   text-align: center;
-  font:  110% Garamond, sans-serif;
+  font:  85% Garamond, sans-serif;
   color: yellow;
 }
 #me a:link {
