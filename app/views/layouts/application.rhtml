@@ -20,7 +20,6 @@
           
 
     <div id="logo" align="center">
-    <p id="dev" align="right"><%= link_to_redbox('Developed By Downie', 'me')%></p>
       <img id="rich3"  style="display: none" src="/images/hockey.jpg" width="90" height="115" alt="Otter Lodge" />
       <img id="rich1"  style="display: none" src="/images/hockeypack.jpg" width="160" height="70" alt="Otter Lodge" />
       <img id="rich" src="/images/logo_otterlodge.jpg" width="120" height="125" alt="Otter Lodge" />
@@ -28,6 +27,7 @@
       <img id="rich4"  style="display: none" src="/images/nflguy.jpg" width="90" height="115" alt="Otter Lodge" />
       <img id="new" style="display: none" src="/images/New.jpg" width="120" height="125" alt="Otter Lodge" /><p id="textny" style="display: none">Bring in the New Year at the Otterlodge!<p>
     
+   
          
     </div>
     <div id="banner">   
@@ -167,7 +167,7 @@
     </div> 
 </div>
 
-      <div id="main">
+      <div id="main"> <p id="dev" ><%= link_to_redbox('Developed By Downie', 'me')%></p>
           <%= @content_for_layout %>
           <br/><br/>
            <div id="suglink" align="center">
