@@ -1,5 +1,2 @@
 page.visual_effect :SlideDown, 'friends'
 
-page.delay(1.8)do
-page.visual_effect :Puff, 'santa1'
-end
