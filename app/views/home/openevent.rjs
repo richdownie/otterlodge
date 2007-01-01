@@ -32,29 +32,6 @@ page.delay(4.0)do
 page.visual_effect :pulsate, 'hooks2'
 end
 
-page.delay(6.0)do
-page.visual_effect :BlindUp, 'rich'
-end
-
-page.delay(6.8)do
-page.visual_effect :BlindDown, 'textny'
-end
-
-page.delay(10.0)do
-page.visual_effect :BlindUp, 'textny'
-end
-
-page.delay(6.8)do
-page.visual_effect :BlindDown, 'new'
-end
-
-page.delay(10.0)do
-page.visual_effect :BlindUp, 'new'
-end
-
-page.delay(10.8)do
-page.visual_effect :BlindDown, 'rich'
-end
 
 
 
