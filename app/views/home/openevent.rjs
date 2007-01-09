@@ -5,6 +5,10 @@ page.visual_effect :fade, 'coupons'
 end
 
 page.delay(1.6)do
+page.visual_effect :appear, 'march'
+end
+
+page.delay(1.6)do
 page.visual_effect :fade, 'cards'
 end
 
