@@ -79,6 +79,9 @@
                     :completed => "Element.show('friends')" %>  <big><img alt="spinner" id="spinner7" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
        <br/>
         
+  <div>
+     <%= link_to 'SUGGESTIONS', :controller => 'suggestions', :action => 'new' %>
+  </div> 
                           
 
      
@@ -91,7 +94,6 @@
                     :completed => "Element.show('contact')" %>
        <big><img alt="spinner" id="spinner2" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
   </div>
-     
    <div id="contact" style="display: none"> 
         <%= render :partial => 'contact' %>                  
    </div>
@@ -171,7 +173,6 @@
           <%= @content_for_layout %>
           <br/><br/>
            <div id="suglink" align="center">
-             <%= link_to 'Suggestions?', :controller => 'suggestions', :action => 'new' %>
              <div id="me" style="display: none">
                <a href="#" onclick="RedBox.close(); return false;" >[X]</a><br/>
                <p><a href="http://www.richdownie.com">www.richdownie.com</p>
