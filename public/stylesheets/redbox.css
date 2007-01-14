@@ -22,16 +22,16 @@
 #me   {
   text-align: center;
   font:  130% Garamond, sans-serif;
-  color: yellow;
+  color: white;
 }
 #me a:link {
-	color: yellow;
+	color: white;
 	text-decoration: none;
     font-weight: bold;
     font:  111% Garamond, sans-serif;
 }
 #me a:visited { 
-	color: yellow;
+	color: white;
 	text-decoration: none;
     font-weight: bold;
     font:  111% Garamond, sans-serif;
