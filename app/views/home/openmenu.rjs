@@ -12,6 +12,14 @@ page.delay(1.6)do
 page.visual_effect :fade, 'emp'
 end
 
+page.delay(1.6)do
+page.visual_effect :fade, 'pong'
+end
+
+page.delay(2.8)do
+page.visual_effect :appear, 'pong'
+end
+
 page.delay(2.6)do
 page.visual_effect :appear, 'hooks1'
 end
