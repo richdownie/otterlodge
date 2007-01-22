@@ -64,3 +64,7 @@
   position: absolute;  
   padding: 1em;
 }
+
+#copy  {
+    font:  50% Garamond, sans-serif;
+}
