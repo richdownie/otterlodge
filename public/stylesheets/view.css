@@ -35,26 +35,7 @@
     }
   
 
-#cl  {
-  text-align: right;
-  font:  50% Garamond, sans-serif;
-  }
 
-#dev  {
-  text-align: center;
-  color: #000000;
-  font:  50% Garamond, sans-serif;
-  }
-  
-#dev  a:link  {
-  color: #000000;
-  text-decoration: none;
-  }
-  
-#dev  a:visited  {
-  color: #000000;
-  text-decoration: none;
-  }
   
 #banner {
   background: green;

@@ -12,7 +12,26 @@
   opacity: .6;
   filter: alpha(opacity=60);
 }
+#cl  {
+  text-align: right;
+  font:  50% Garamond, sans-serif;
+  }
 
+#dev  {
+  text-align: center;
+  color: #000000;
+  font:  60% Garamond, sans-serif;
+  }
+  
+#dev  a:link  {
+  color: #000000;
+  text-decoration: none;
+  }
+  
+#dev  a:visited  {
+  color: #000000;
+  text-decoration: none;
+  }
   
 #me   {
   text-align: center;
