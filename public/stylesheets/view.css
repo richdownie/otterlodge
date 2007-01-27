@@ -35,6 +35,11 @@
     }
   
 
+#cl  {
+  text-align: right;
+  font:  50% Garamond, sans-serif;
+  }
+
 #dev  {
   text-align: center;
   color: #000000;
