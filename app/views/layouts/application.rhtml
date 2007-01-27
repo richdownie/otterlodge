@@ -11,7 +11,8 @@
   <%= javascript_include_tag "dojo" %>
   <%= javascript_include_tag 'redbox' %>
 </head>
-<body id="view">
+<body id="view">      
+  
     <div id="banner2">   
        <small>"Good food, good people, good times"</small>
     </div>
@@ -29,7 +30,7 @@
       <img id="colts"  style="display: none" src="/images/colts.gif" width="145" height="115" alt="Otter Lodge" />
       <img id="rich2"  style="display: none" src="/images/nfl.jpg" width="160" height="70" alt="Otter Lodge" />
       <img id="rich4"  style="display: none" src="/images/nflguy.jpg" width="90" height="115" alt="Otter Lodge" />
-      
+
    
          
     </div>
@@ -175,6 +176,7 @@
 </div>
 
       <div id="main"> 
+      <p id="dev" ><%= link_to_redbox('Development & Design', 'me')%> / <a href="http://www.diglearning.com">Web Host</a></p>
           <%= @content_for_layout %>
           <br/><br/>
            <div id="suglink" align="center">
@@ -188,8 +190,7 @@
 
 <div id="footer">      
      <small><div id="sign" align="center">
-       Hosted by <a href="http://www.diglearning.com">Diglearning</a><br/>
-      <p><a href="http://www.rubyonrails.com/"><img src="/images/rails2.jpg" width="110" height="18" /></a></p>
+      <p><a href="http://www.rubyonrails.com/"><img src="http://workingwithrails.com/images/ruby_on_rails.gif?1168956283" width="110" height="18" /></a></p>
     </div></small>
 
 </div>
