@@ -4,10 +4,6 @@ page.delay(1.6)do
 page.visual_effect :fade, 'coupons'
 end
 
-page.delay(1.6)do
-page.visual_effect :grow, 'bears'
-page.visual_effect :grow, 'colts'
-end
 
 page.delay(1.6)do
 page.visual_effect :fade, 'cards'
