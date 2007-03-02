@@ -1,2 +1,3 @@
 
 page.visual_effect :highlight, 'logo'
+page.hide 'march'

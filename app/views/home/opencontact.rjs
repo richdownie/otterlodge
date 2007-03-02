@@ -1,2 +1,5 @@
 page.visual_effect :SlideDown, 'contact'
 page.visual_effect :SlideUp, 'contact-link'
+page.hide 'march'
+page.hide 'rich1'
+page.hide 'rich3'
