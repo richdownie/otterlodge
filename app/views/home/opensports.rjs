@@ -1,7 +1,6 @@
 page.delay(0.5)do
 page.visual_effect :appear, 'rich1'
 page.visual_effect :appear, 'rich3'
-page.visual_effect :appear, 'march'
 end
 
 
