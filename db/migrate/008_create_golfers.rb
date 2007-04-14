@@ -3,6 +3,8 @@ class CreateGolfers < ActiveRecord::Migration
     create_table :golfers do |t|
        t.column :first_name, :string
        t.column :last_name, :string
+       t.column :phone, :string
+       t.column :paid, :string
        t.column :team_id, :integer
     end
     Golfer.create :first_name => "Rich", :last_name => "Downie", :team_id => 1
