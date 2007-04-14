@@ -1,0 +1,8 @@
+<% for column in Team.content_columns %>
+<p>
+  <b><%= column.human_name %>:</b> <%=h @team.send(column.name) %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', :action => 'edit', :id => @team %> |
+<%= link_to 'Back', :action => 'list' %>
