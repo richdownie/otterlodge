@@ -1,0 +1,19 @@
+<h1>Listing Golf Teams</h1>
+
+  
+<% for tournament in @tournaments %>
+  <tr>
+    <%= tournament.team_name %> | PAID: <%= tournament.team_paid %> |
+    <td><%= link_to 'Show', :action => 'show', :id => tournament %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => tournament %></td>
+    <td><%= link_to 'Destroy', { :action => 'destroy', :id => tournament }, :confirm => 'Are you sure?', :post => true %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @tournament_pages.current.previous } if @tournament_pages.current.previous %>
+<%= link_to 'Next page', { :page => @tournament_pages.current.next } if @tournament_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New Team', :action => 'new' %>
