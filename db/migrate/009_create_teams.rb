@@ -4,7 +4,7 @@ class CreateTeams < ActiveRecord::Migration
        t.column :name, :string
        t.column :paid, :string
     end
-    Team.create :name => "Sample Team"
+    Team.create :name => "Sample Team", :paid => "paid"
   end
 
   def self.down
