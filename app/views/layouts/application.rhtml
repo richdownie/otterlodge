@@ -172,6 +172,7 @@
 </div>
 
       <div id="main"> 
+      
       <%= @content_for_layout %>
       <p id="dev" ><a href="http://www.richdownie.com">Development & Design</a> / <a href="http://www.diglearning.com">Web Host</a></p>
           
@@ -183,6 +184,7 @@
                <p id="copy">Copyright ©2007</p>
              </div>
            </div>
+           <%= link_to "Golf Tournament", :controller => 'golf_tourney', :action => 'list' %>
 	  </div>
 
 <div id="footer">      
