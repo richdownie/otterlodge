@@ -74,4 +74,6 @@ desc "Link in the production database.yml"
 task :after_update_code do
   run "ln -nfs #{deploy_to}/#{shared_dir}/config/database.yml #{release_path}/config/database.yml" 
   run "ln -nfs #{deploy_to}/#{shared_dir}/config/environment.rb #{release_path}/config/environment.rb" 
+  run "chmod -R u+rwX,go-w #{release_path}/public"
+  run "chmod -R u+rwX,go-w #{release_path}/script"
 end
