@@ -56,12 +56,7 @@
                     <big><img alt="spinner" id="spinner3" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
         <br/>
 
-       <%= link_to_remote "EVENTS",
-                    :url => menus_url(:action => 'openevent'),
-                    :loading => "Element.show('spinner4')",
-                    :loaded => "Element.hide('spinner4'), Element.hide('menu'), Element.hide('friends'), Element.hide('photos'), Element.hide('sports'), Element.hide('rich1'), Element.hide('rich2'), Element.hide('rich3'), Element.hide('rich4'), Element.hide('jobs')",
-                    :completed => "Element.show('event')" %>  <big><img alt="spinner" id="spinner4" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
-        <br/>                   
+               
 
          <%= link_to_remote "PHOTOS",
                     :url => map_url(:action => 'openphotos'),
