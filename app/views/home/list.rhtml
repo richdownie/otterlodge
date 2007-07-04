@@ -21,33 +21,9 @@
    </div>
    
 
-   
-  <div id="special-list" align="center">
-  <br/>
-  <b>WEEKLY SPECIALS</b>
-    <table cellpadding="5" cellspacing="0" border="6">
-      <br/>       
-      <tr>
-            <th>DAY</th>
-            <th>LUNCH</th>
-            <th>DINNER</th>
-         </tr> 
-       <% for special in @specials -%>
-         <tr  align="center" valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
-            <td>
-               <%= h(special.day) %> <br/>
-            </td>
-            <td>    
-               <%= h(special.lunch) %>
-            </td>
-            <td>
-                <%= h(special.dinner) %>
-            </td>
-         </tr>
-       <% end %>
-     </table>
-   </div> 
+  
    <br/>
+   <%= render :partial => 'event' %>
 
    <div id="vmap" align="center">
     <script src="http://gmodules.com/ig/ifr?url=http://visitormap.googlecode.com/svn/trunk/visitorMap.xml&amp;up_title=Visitor%20Map&amp;up_stored_visitor_url=&amp;up_gadgetHeight=400&amp;up_map_location=49.15297%2C0.703125&amp;up_map_zoom=2&amp;up_visitor_url=&amp;up_thumbGrid=4&amp;up_thumbGridWidth=108&amp;up_mapType=G_NORMAL_MAP&amp;up_miniMapControls=0&amp;up_showImage=0&amp;synd=open&amp;w=320&amp;h=250&amp;title=__UP_title__&amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;output=js"></script>
