@@ -150,11 +150,11 @@ background: #CCFFCC ;
 #event-list .list-line-even {
 background: #FFFFCC;
   color: black;
-  font:  110% LongIsland, sans-serif;
+  font:  100% LongIsland, sans-serif;
 }
 #event-list .list-line-odd {
 background: #CCFFCC ;
-  font:  110% LongIsland, sans-serif;
+  font:  100% LongIsland, sans-serif;
 }
 
 #event-list th {
