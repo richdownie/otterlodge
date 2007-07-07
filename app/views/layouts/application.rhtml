@@ -56,9 +56,11 @@
                     <big><img alt="spinner" id="spinner3" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
         <br/>
 
-               
-
-         <%= link_to_remote "PHOTOS",
+         <%= link_to "REWARDS", :controller => "home", :action => "rewards" %>
+		 
+		 <br/>
+        
+		 <%= link_to_remote "PHOTOS",
                     :url => map_url(:action => 'openphotos'),
                     :loading => "Element.show('spinner1'), Element.hide('march')",
                     :loaded => "Element.hide('spinner1'), Element.hide('menu'), Element.hide('friends'), Element.hide('event'), Element.hide('sports'), Element.hide('rich1'), Element.hide('rich2'), Element.hide('rich3'), Element.hide('rich4'), Element.hide('jobs')",
