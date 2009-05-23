@@ -166,8 +166,10 @@
 
    <br/>
       <div id="emp" align="center">
-        <p><a href="http://www.theotterlodge.com/jobs/list"><img src="/images/help.jpg" width="110" height="70" /></a>
-       <a href="http://www.theotterlodge.com/login"><img src="/images/emponly.jpg" width="110" height="70" /></a></p>
+        <p>
+          <%= link_to image_tag("/images/help.jpg", :size => "110x70"), "/jobs/list" %>
+          <%= link_to image_tag("/images/emponly.jpg", :size => "110x70"), login_path %>
+        </p>
     </div><br/> 
 
 
@@ -175,25 +177,14 @@
 
       <div id="main"> 
       <%= @content_for_layout %>
-      <p id="dev" ><a href="http://www.richdownie.com">Development & Design</a> / <a href="http://www.diglearning.com">Web Host</a></p>
-          
-          <br/><br/>
-           <div id="suglink" align="center">
-             <div id="me" style="display: none">
-               <p id="cl"><a href="#" onclick="RedBox.close(); return false;" >[X]</a></p>
-               <p><a href="http://www.richdownie.com">www.richdownie.com</p>
-               <p id="copy">Copyright ©2007</p>
-             </div>
-           </div>
-		   <div align="center">
+      <p id="dev" ></p>
+       </div>
+		   <div align="center" style="display:none;">
 		   	<iframe width="425" height="350" frameborder="no" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=1776+Monroe+Ave,+Rochester,+NY+14618,+USA&ie=UTF8&ll=43.136318,-77.56279&spn=0.006687,0.014956&z=14&om=1&output=embed&s=AARTsJrOo9I_irHSlYJVgixJf9skgCDAHQ"></iframe><br/><a href="http://maps.google.com/maps?q=1776+Monroe+Ave,+Rochester,+NY+14618,+USA&ie=UTF8&ll=43.136318,-77.56279&spn=0.006687,0.014956&z=14&om=1&source=embed" style="color:#0000FF;text-align:left;font-size:small">View Larger Map</a>
            </div>
 	  </div>
 
 <div id="footer">      
-     <small><div id="sign" align="center">
-      <p><a href="http://www.rubyonrails.com/"><img src="http://workingwithrails.com/images/ruby_on_rails.gif?1168956283" width="110" height="18" /></a></p>
-    </div></small>
          <img id="tracks" src="/images/animal.gif" width="110" height="110"  />
       </div>
               <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
