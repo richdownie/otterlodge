@@ -1,8 +1,0 @@
-<% for column in Schedule.content_columns %>
-<p>
-  <b><%= column.human_name %>:</b> <%=h @schedule.send(column.name) %>
-</p>
-<% end %>
-
-<%= link_to 'Edit', :action => 'edit', :id => @schedule %> |
-<%= link_to 'Back', :action => 'list' %>

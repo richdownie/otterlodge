@@ -93,7 +93,13 @@
        <big><img alt="spinner" id="spinner2" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
   </div>
    <div id="contact" style="display: none"> 
-        <%= render :partial => 'contact' %>                  
+     <div id="email">
+       585.442.8790<br/> 
+       1776 Monore Ave<br/>
+       Rochester, NY 14618<br/>
+       <%= mail_to("OtterLodge@rochester.rr.com", "OtterLodge@rochester.rr.com",
+       :endocde => "javascript") %> 
+     </div>
    </div>
    
    <br/>
