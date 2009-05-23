@@ -1,0 +1,13 @@
+with sessions
+Reply rate [replies/s]: min 66.6 avg 69.8 max 73.0 stddev 4.5 (2 samples) [1000]
+Reply rate [replies/s]: min 67.2 avg 72.1 max 74.2 stddev 3.3 (4 samples) [1500]
+
+no sessions
+Reply rate [replies/s]: min 64.2 avg 69.4 max 72.2 stddev 3.6 (4 samples) [1500]
+
+page caching
+Reply rate [replies/s]: min 60.4 avg 63.3 max 66.4 stddev 2.8 (4 samples) [1500]
+
+action caching
+Reply rate [replies/s]: min 95.0 avg 96.7 max 98.4 stddev 2.4 (2 samples) [1500]
+Reply rate [replies/s]: min 101.4 avg 111.0 max 115.2 stddev 6.4 (4 samples) [2500]
