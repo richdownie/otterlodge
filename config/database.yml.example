@@ -1,0 +1,16 @@
+basic: &basic
+  adapter: mysql
+  username: root
+  password:
+
+development: 
+  <<: *basic
+  database: otter_dev
+  
+test:
+  <<: *basic
+  database: otter_test
+
+development: 
+  <<: *basic
+  database: otter_dev
