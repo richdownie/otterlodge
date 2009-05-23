@@ -6,10 +6,8 @@
   <title>Otter Lodge</title>
   <%= stylesheet_link_tag "view", :media => "all" %>
   <%= stylesheet_link_tag "rightside", :media => "all" %>
-  <%= stylesheet_link_tag 'redbox' %> 
   <%= javascript_include_tag :defaults %>
   <%= javascript_include_tag "dojo" %>
-  <%= javascript_include_tag 'redbox' %>
 </head>
 <body id="view">      
     <div id="banner2">   
@@ -55,10 +53,6 @@
                     :completed => "Element.show('special-list'), Element.show('map')" %> 
                     <big><img alt="spinner" id="spinner3" src="http://www.yup.com/lib/spinners/spinner_moz.gif" style="display:none;" /></big>
         <br/>
-
-         <%= link_to "REWARDS", :controller => "home", :action => "rewards" %>
-		 
-		 <br/>
         
 		 <%= link_to_remote "PHOTOS",
                     :url => map_url(:action => 'openphotos'),
