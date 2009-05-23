@@ -1,29 +1,57 @@
+<div id="photos" style="display: none">
+  <div id="photos-partial" align="center">
+    <a href="http://picasaweb.google.com/OtterLodge"><br/><br/>CLICK FOR MORE...</a></p>
+    <p>
+      <a href="http://picasaweb.google.com/OtterLodge">
+        <img src="/images/otter3.jpg" width="220" height="165" alt="Otter Lodge" />
+      </a>
+    </p>
+  </div>
+</div>
 
-   <div id="photos" style="display: none">      
-     <%= render :partial => 'photos' %>             
-     
-   </div>
+<div id="menu" style="display: none">
+  <div id="menu-partial" align="center">
+       <a href="/docs/Menu.pdf" />MAIN MENU</a><br/><br/>
+       <a href="/docs/banqMenu.pdf" />BANQUET MENU</a><br/><br/>
+       <img src="/images/chef.jpg" width="120" height="175" alt="Otter Lodge" />
+  </div>
+</div>
 
-   <div id="menu" style="display: none">  
-     <%= render :partial => 'menu' %>                  
-   </div>
-   
-   <div id="event" style="display: none">        
-     <%= render :partial => 'event' %>             
-   </div>
+<div id="event" style="display: none">
+  <div id="event-list" align="center">
+    <table cellpadding="2" cellspacing="0" border="4">
+      <tr>
+        <th>DATE</th>
+        <th>EVENT</th>
+      </tr>
+      <% @events.each do |event| -%>
+        <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+          <td><%=h (event.date.strftime("%m/%d/%Y")) %></td>
+          <td><%= event.name %></td>
+        </tr>
+      <% end -%>
+    </table>
+  </div>
+</div>
 
-   <div id="sports" style="display: none">      
-        <%= render :partial => 'sports' %> 
-   </div>
-    
-   <div id="friends" style="display: none">      
-        <%= render :partial => 'friends' %> 
-   
-   </div>
-   
+<div id="sports" style="display: none">
+  <div id="paged" align="center">
+    <script src="http://gmodules.com/ig/ifr?url=http://www.sportsline.com/modules/scoresDOM&synd=open&w=320&h=280&title=&border=%23ffffff%7C0px%2C1px+solid+%2399BB66%7C0px%2C2px+solid+%23AACC66%7C0px%2C2px+solid+%23BBDD66&output=js"></script>
+  </div>
+</div>
 
-  
-   <%= render :partial => 'event' %>
-
-   <br/>
-
+<div id="friends" style="display: none">
+  <br/><br/>
+  <div id="friends-partial" align="center">
+    <p><a href="http://www.tcrtoons.com/"><img src="/images/Todd1.JPG" width="185" height="100" /></a>
+    <p><a href="http://www.skysands.com"><img src="/images/sky.jpg" width="150" height="70" /></a>
+    <a href="http://www.ae-spa.com"><img src="/images/aespa1.jpg" width="90" height="70" /></a></p>
+    <p><a href="http://www.molson.com/"><img src="/images/molson.jpg" width="110" height="70" /></a> <a href="http://www.stereoshoponline.com/"><img src="/images/stereo.jpg" width="150" height="70" /></a> <a href="http://www.custombrewcrafters.com/"><img src="/images/cblog.jpg" width="150" height="70" /></a></p>
+    <a href="http://home.rochester.rr.com/pstrowe/contact.htm"><img src="/images/pstowe.jpg" width="75" height="95" alt="Paul Stowe" /></a>
+    <a href="http://www.davemcgrath.com/indexnew.html/"><img src="/images/dmcgrath.jpg" width="100" height="95" alt="Dave McGrath" />  <br/>
+    <a href="http://www.golfrochesterguide.net/"><img src="/images/golf.gif" width="250" height="80" /><br/><br/>
+    <a href="http://www.victorhills.com/"><img src="/images/vic.jpg" width="265" height="105" />  
+    <a href="http://www.tenuglymen.com/"><img src="/images/10.gif" width="265" height="105" /><br/><br/>  
+    <a href="http://www.ramsinc.com/"><img src="/images/ramstext.jpg" width="365" height="95" />  
+  </div>
+</div>
