@@ -24,7 +24,8 @@ set :repository, "git@github.com:richdownie/otterlodge.git"
 # be used to single out a specific subset of boxes in a particular role, like
 # :primary => true.
 
-set :server, 'theotterlodge.com'
+# set :server, 'theotterlodge.com'
+set :server, 'worthlesshosting.com'
 role :web, server
 role :app, server
 role :db,  server, :primary => true
