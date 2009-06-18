@@ -13,6 +13,10 @@ set :use_sudo, false
 # form the root of the application path.
 
 set :application, "otterlodge"
+set :scm, :git
+set :git_shallow_clone, 1
+set :deploy_via, :remote_cache
+set :repository_cache, "cached-copy"
 set :repository, "git@github.com:richdownie/otterlodge.git"
 
 # =============================================================================
@@ -25,10 +29,7 @@ set :repository, "git@github.com:richdownie/otterlodge.git"
 # :primary => true.
 
 # set :server, 'theotterlodge.com'
-set :server, 'worthlesshosting.com'
-role :web, server
-role :app, server
-role :db,  server, :primary => true
+server 'worthlesshosting.com', :app, :web, :db, :primary => true
 
 set :deploy_to, "/home/#{user}/sites/#{application}"
 
@@ -41,23 +42,6 @@ set :deploy_to, "/home/#{user}/sites/#{application}"
 # =============================================================================
 # TASKS
 # =============================================================================
-
-task :restart, :roles => :app do
-end
-
-desc "Create database.yml in shared/config" 
-task :after_setup do
-  database_configuration = render :template => <<-EOF
-production:
-  adapter: mysql
-  database: otterlodge
-  username: #{db_user}
-  password: #{db_password}
-EOF
-
-  run "mkdir -p #{deploy_to}/#{shared_dir}/config" 
-  put database_configuration, "#{deploy_to}/#{shared_dir}/config/database.yml" 
-end
 
 after "deploy:update_code", "deploy:create_symlinks"
 
