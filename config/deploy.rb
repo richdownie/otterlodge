@@ -1,6 +1,6 @@
-set :user, "rdownie"
-set :db_user, "rdownie_otterdb"
-set :db_password, "ott3rl0dg3"
+set :user, "rich"
+set :db_user, "otterdb"
+set :db_password, "C9AMafBQeDmu3iPvqwU"
 
 set :keep_releases, 3
 set :use_sudo, false
@@ -13,7 +13,7 @@ set :use_sudo, false
 # form the root of the application path.
 
 set :application, "otterlodge"
-set :repository, "https://secure.svnrepository.com/s_digger/rudyonrails/#{application}/trunk"
+set :repository, "git@github.com:richdownie/otterlodge.git"
 
 # =============================================================================
 # ROLES
@@ -29,7 +29,7 @@ role :web, server
 role :app, server
 role :db,  server, :primary => true
 
-set :deploy_to, "/home/#{user}/apps/#{application}"
+set :deploy_to, "/home/#{user}/sites/#{application}"
 
 # =============================================================================
 # SSH OPTIONS
@@ -47,33 +47,30 @@ end
 desc "Create database.yml in shared/config" 
 task :after_setup do
   database_configuration = render :template => <<-EOF
-login: &login
-  adapter: mysql
-  host: localhost
-  username: <%= db_user %>
-  password: <%= db_password %>
-
-development:
-  database: <%= "#{user}_otterdev" %>
-  <<: *login
-
-test:
-  database: <%= "#{user}_ottertest" %>
-  <<: *login
-
 production:
-  database: <%= "#{user}_otterprod" %>
-  <<: *login
+  adapter: mysql
+  database: otterlodge
+  username: #{db_user}
+  password: #{db_password}
 EOF
 
   run "mkdir -p #{deploy_to}/#{shared_dir}/config" 
   put database_configuration, "#{deploy_to}/#{shared_dir}/config/database.yml" 
 end
 
-desc "Link in the production database.yml" 
-task :after_update_code do
-  run "ln -nfs #{deploy_to}/#{shared_dir}/config/database.yml #{release_path}/config/database.yml" 
-  run "ln -nfs #{deploy_to}/#{shared_dir}/config/environment.rb #{release_path}/config/environment.rb" 
-  run "chmod -R u+rwX,go-w #{release_path}/public"
-  run "chmod -R u+rwX,go-w #{release_path}/script"
+after "deploy:update_code", "deploy:create_symlinks"
+
+namespace :deploy do
+  desc "Create symlinks for deployed files"
+  task :create_symlinks do
+    run "ln -nfs #{deploy_to}/#{shared_dir}/config/database.yml #{release_path}/config/database.yml"
+  end
 end
+
+namespace :passenger do
+  desc "Restart passenger instances"
+  task :restart do
+    run "touch #{current_path}/tmp/restart.txt"
+  end
+end
+

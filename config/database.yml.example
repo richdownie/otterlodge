@@ -10,7 +10,3 @@ development:
 test:
   <<: *basic
   database: otter_test
-
-development: 
-  <<: *basic
-  database: otter_dev
